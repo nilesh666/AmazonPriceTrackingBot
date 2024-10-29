@@ -11,7 +11,6 @@ from_mail_id = os.environ.get("FROM_MAIL")
 to_mail_id = os.environ.get("TO_MAIL")
 h = os.environ.get("HEAD")
 
-#url = "https://appbrewery.github.io/instant_pot/"
 url = ""#<<<Amazon product link
 response = requests.get(url, headers={"Accept-Language":"en-US,en;q=0.9"})
 soup = BeautifulSoup(response.text, "html.parser")
