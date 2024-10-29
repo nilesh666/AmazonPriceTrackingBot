@@ -19,7 +19,7 @@ price = float(price)
 
 
 
-m=f"Subject: Time to buy \n\nThe price dropped for the product {url}\nThe price is {price}"
+#m=f"Subject: Time to buy \n\nThe price dropped for the product {url}\nThe price is {price}"
 buy_price = 45000 #change your desired low price according to the product
 
 if price<buy_price:
