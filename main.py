@@ -12,7 +12,7 @@ to_mail_id = os.environ.get("TO_MAIL")
 h = os.environ.get("HEAD")
 
 #url = "https://appbrewery.github.io/instant_pot/"
-url = "https://www.amazon.in/Apple-iPhone-13-128GB-Midnight/dp/B09G9HD6PD?pd_rd_w=dZ1yb&content-id=amzn1.sym.8348444b-79af-453e-aa06-475f629908dc&pf_rd_p=8348444b-79af-453e-aa06-475f629908dc&pf_rd_r=NJJQRMHH1JA9742VYQTT&pd_rd_wg=JKNmD&pd_rd_r=728d8fa0-d712-4de1-b6ff-91f9c9f350ee&pd_rd_i=B09G9HD6PD&ref_=pd_hp_d_btf_unk_B09G9HD6PD"
+url = ""#<<<Amazon product link
 response = requests.get(url, headers={"Accept-Language":"en-US,en;q=0.9"})
 soup = BeautifulSoup(response.text, "html.parser")
 price = soup.find(class_="a-price aok-align-center reinventPricePriceToPayMargin priceToPay").getText().split("₹")[1].replace(",","")
